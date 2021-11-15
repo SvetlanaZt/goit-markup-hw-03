@@ -1,0 +1,137 @@
+:root {
+  --first-text-color: #212121;
+  --second-text-color: #ffffff;
+  --text-p-color: #757575;
+  --accent-color: #2196f3;
+  --button-color: #f5f4fa;
+}
+/*header******/
+
+body {
+  font-family: Roboto, sans-serif;
+}
+.header-logo {
+  color: var(--accent-color);
+}
+.link-logo {
+  font-family: Raleway;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo-studio {
+  color: var(--first-text-color);
+}
+
+.list {
+  list-style: none;
+}
+.header-link .link {
+  color: var(--first-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.header-link .link:hover,
+.header-link .link:focus {
+  color: var(--accent-color);
+}
+
+.header-tell {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-p-color);
+}
+.header-tell:hover,
+.header-tell:focus {
+  color: var(--accent-color);
+}
+
+/***Кнопки*/
+.button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  background: #f5f4fa;
+  color: var(--first-text-color);
+  border: none;
+}
+
+/*Картинки*/
+.list-style {
+  text-decoration: none;
+}
+.list-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-p-color);
+}
+.list-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--first-text-color);
+}
+.text {
+  color: var(--text-p-color);
+}
+
+/*Футер**********/
+.footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background: #2f303a;
+}
+.footer-logo {
+  text-decoration: none;
+}
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer-studio {
+  color: var(--second-text-color);
+}
+.footer-list {
+  font-family: Roboto;
+  font-style: normal;
+}
+.footer-adress {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  text-decoration: none;
+}
+.footer-nav {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
