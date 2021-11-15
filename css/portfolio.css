@@ -9,12 +9,25 @@
 
 body {
   font-family: Roboto, sans-serif;
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
 .header-logo {
   color: var(--accent-color);
 }
+
 .link-logo {
   font-family: Raleway;
+  margin-right: 93px;
   font-style: normal;
   text-decoration: none;
   font-weight: bold;
@@ -25,26 +38,59 @@ body {
 .logo-studio {
   color: var(--first-text-color);
 }
-
 .list {
   list-style: none;
+  margin: 0;
 }
+.nav-header {
+  display: flex;
+}
+
 .header-link .link {
-  color: var(--first-text-color);
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  color: #212121;
 }
+
+.link {
+  display: list-item;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+}
+.container-main {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .header-link .link:hover,
 .header-link .link:focus {
   color: var(--accent-color);
+}
+.header-info {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 0;
 }
 
 .header-tell {
   font-weight: 500;
   font-size: 14px;
+  margin-right: 50px;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -56,6 +102,16 @@ body {
 }
 
 /***Кнопки*/
+.container-portfolio {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.portfolio-title {
+  display: none;
+}
+.portfolio-list {
+  display: flex;
+}
 .button {
   font-family: Roboto;
   font-style: normal;
@@ -71,6 +127,9 @@ body {
 }
 
 /*Картинки*/
+.img-list {
+  display: flex;
+}
 .list-style {
   text-decoration: none;
 }

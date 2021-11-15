@@ -47,7 +47,6 @@ h5 {
 }
 .nav-header {
   display: flex;
-  margin-right: 330px;
 }
 
 .header-link .link {
@@ -84,6 +83,7 @@ h5 {
 }
 .header-info {
   display: flex;
+  margin-left: auto;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -108,6 +108,7 @@ h5 {
 
 .hero {
   height: 600px;
+  max-width: 1600px;
   color: var(--second-text-color);
   background-color: #2f303a;
   text-align: center;
@@ -144,8 +145,13 @@ h5 {
   color: var(--first-text-color);
 }
 /* Преимущества*/
-.section-about {
+
+.container-about {
   max-width: 1170px;
+  margin: 0 auto;
+}
+.section-about {
+  margin-bottom: 94px;
 }
 .list.title {
   color: var(--first-text-color);
@@ -160,6 +166,7 @@ h5 {
 }
 .pre-title {
   font-weight: bold;
+  max-width: 270px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -168,6 +175,7 @@ h5 {
 }
 .iteam {
   justify-content: center;
+  margin-right: 30px;
 }
 .text {
   font-weight: normal;
@@ -180,21 +188,24 @@ h5 {
 
 .section-work {
   background: var(--second-text-color);
-  margin-top: 94px;
+}
+.container-group {
   max-width: 1170px;
-  margin-bottom: 94px;
+  margin: 0 auto;
+}
+.container-work {
+  max-width: 1170px;
+  justify-content: center;
 }
 .work-list {
   display: flex;
   border: solid blue;
-  margin-top: 50px;
-  justify-content: center;
 }
-.work-list li {
+/*.work-list li {
   width: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 94px;
-}
+} */
 .section-title {
   color: var(--first-text-color);
   font-size: 36px;
@@ -209,17 +220,21 @@ h5 {
 
 .section-group {
   background: #f5f4fa;
-  max-width: 1170px;
   padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: center;
+}
+.container-group {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .group-list {
   padding-left: 0;
-  border: solid blue;
   display: flex;
   justify-content: space-between;
 }
 .section-title {
-  border: solid blue;
+  padding-bottom: 60px;
 }
 .name {
   color: var(--first-text-color);
@@ -240,11 +255,13 @@ h5 {
 
 /*Футер**********/
 .footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
   background: #2f303a;
+  height: 252px;
+}
+.container-footer {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 .footer-logo {
   text-decoration: none;
