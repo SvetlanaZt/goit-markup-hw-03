@@ -10,8 +10,6 @@
 body {
   font-family: Roboto, sans-serif;
   max-width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 h1,
@@ -20,6 +18,18 @@ h3,
 h4,
 h5 {
   margin: 0;
+}
+.header {
+  border: 1px solid #ececec;
+  margin-bottom: 94px;
+}
+.container-main {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  align-items: center;
 }
 .header-logo {
   color: var(--accent-color);
@@ -32,7 +42,7 @@ h5 {
   text-decoration: none;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
 }
 .logo-studio {
@@ -44,6 +54,7 @@ h5 {
 }
 .nav-header {
   display: flex;
+  align-items: center;
 }
 
 .header-link .link {
@@ -53,7 +64,7 @@ h5 {
   margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -65,13 +76,6 @@ h5 {
 .header-link {
   display: flex;
   align-items: center;
-}
-.container-main {
-  display: flex;
-  align-items: center;
-  max-width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .header-link .link:hover,
@@ -91,7 +95,7 @@ h5 {
   font-weight: 500;
   font-size: 14px;
   margin-right: 50px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-p-color);
@@ -101,49 +105,81 @@ h5 {
   color: var(--accent-color);
 }
 
-/***Кнопки*/
+/***Tabs*/
+.portfolio {
+}
 .container-portfolio {
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-title {
   display: none;
 }
 .portfolio-list {
   display: flex;
+  justify-content: center;
 }
 .button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  border: none;
   background: #f5f4fa;
   color: var(--first-text-color);
   border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background: var(--accent-color);
+  color: var(--button-color);
 }
 
-/*Картинки*/
+/*IMG*************/
+.container-list {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .img-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .list-style {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.list-style:nth-child(n3) {
+  margin-right: 0;
+}
+.list-style:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.link-img {
   text-decoration: none;
 }
 .list-text {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--text-p-color);
 }
 .list-title {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--first-text-color);
 }
@@ -153,30 +189,34 @@ h5 {
 
 /*Футер**********/
 .footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
   background: #2f303a;
+  height: 252px;
+}
+.container-footer {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  margin: 0 auto;
 }
 .footer-logo {
   text-decoration: none;
-}
-.footer-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-.footer-studio {
-  color: var(--second-text-color);
 }
 .footer-list {
   font-family: Roboto;
   font-style: normal;
+  padding-left: 0;
+}
+.footer-link {
+  font-family: Raleway;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--second-text-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .footer-adress {
   font-weight: normal;
